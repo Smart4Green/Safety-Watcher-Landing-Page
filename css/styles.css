@@ -1944,23 +1944,26 @@ body.loading::-webkit-scrollbar {
     padding: 38px 36px 32px;
 }
 .modal-header-modern {
-    display: flex;
-    align-items: flex-start;
-    gap: 16px;
-    margin-bottom: 28px;
+    margin-bottom: 24px;
     padding-right: 36px;
 }
+.modal-header-top {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 10px;
+}
 .modal-icon-badge {
-    width: 50px;
-    height: 50px;
-    border-radius: 16px;
+    width: 48px;
+    height: 48px;
+    border-radius: 14px;
     background: linear-gradient(135deg, rgba(30, 91, 255, 0.15), rgba(77, 163, 255, 0.25));
     border: 1px solid rgba(30, 91, 255, 0.3);
     display: flex;
     align-items: center;
     justify-content: center;
     color: var(--electric-blue);
-    font-size: 1.3rem;
+    font-size: 1.25rem;
     flex-shrink: 0;
 }
 .modal-title-text {
@@ -1968,8 +1971,8 @@ body.loading::-webkit-scrollbar {
     font-size: 1.55rem;
     font-weight: 700;
     color: var(--title-color);
-    margin-bottom: 4px;
-    line-height: 1.25;
+    margin-bottom: 0;
+    line-height: 1.2;
 }
 .modal-subtitle-text {
     font-size: 0.92rem;
@@ -2057,7 +2060,7 @@ body.loading::-webkit-scrollbar {
     margin-bottom: 2px;
 }
 .contact-info-val {
-    font-size: 1.08rem;
+    font-size: clamp(0.92rem, 3.2vw, 1.08rem);
     font-weight: 700;
     color: var(--title-color);
     font-family: 'Outfit', 'Montserrat', sans-serif;
@@ -2199,15 +2202,50 @@ body.loading::-webkit-scrollbar {
 
 @media (max-width: 576px) {
     .modal-body-wrapper {
-        padding: 28px 20px 22px;
+        padding: 24px 18px 20px;
     }
     .modal-header-modern {
-        flex-direction: column;
+        margin-bottom: 18px;
+        padding-right: 32px;
+    }
+    .modal-header-top {
+        display: flex;
+        align-items: center;
         gap: 12px;
-        padding-right: 28px;
+        margin-bottom: 8px;
+    }
+    .modal-icon-badge {
+        width: 42px;
+        height: 42px;
+        font-size: 1.15rem;
+        border-radius: 12px;
+        flex-shrink: 0;
     }
     .modal-title-text {
-        font-size: 1.3rem;
+        font-size: 1.35rem;
+        margin-bottom: 0;
+    }
+    .modal-subtitle-text {
+        font-size: 0.85rem;
+        line-height: 1.45;
+    }
+    .contact-info-card {
+        padding: 13px 14px;
+        gap: 12px;
+    }
+    .contact-info-icon {
+        width: 42px;
+        height: 42px;
+        font-size: 1.15rem;
+        border-radius: 12px;
+    }
+    .contact-info-val {
+        font-size: clamp(0.85rem, 3.6vw, 1.02rem);
+    }
+    .contact-info-arrow {
+        width: 30px;
+        height: 30px;
+        font-size: 0.75rem;
     }
     .footer-content {
         grid-template-columns: 1fr;
