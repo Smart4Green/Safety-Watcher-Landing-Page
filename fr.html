@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smart Safe Vision - AI Fire & Smoke Detection</title>
+    <title>Smart Safe Vision - Détection d'Incendie et de Fumée par IA</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -23,6 +23,11 @@
                     <img src="img/brand-icon.png" alt="Smart Safe Vision" class="loader-logo">
                 </div>
             </div>
+            <div class="loader-text-stack">
+                <span class="word-smart">SMART</span>
+                <span class="word-safe">SAFE</span>
+                <span class="word-vision">VISION</span>
+            </div>
         </div>
     </div>
 
@@ -40,25 +45,25 @@
 
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#how-it-works">How It Works</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#detections">Detection</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#features">Fonctionnalités</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#how-it-works">Comment ça marche</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#detections">Détection</a></li>
                 </ul>
                 <a href="#" onclick="openContactModal(); return false;" class="btn-nav-primary ms-lg-3 my-2 my-lg-0">Contact</a>
                 <div class="d-none d-lg-flex align-items-center gap-2 ms-lg-3 my-2 my-lg-0">
                     <div class="dropdown lang-dropdown">
-                        <button class="lang-toggle-btn dropdown-toggle" type="button" id="langDropdown" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Select Language" title="Select Language">
+                        <button class="lang-toggle-btn dropdown-toggle" type="button" id="langDropdownFr" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Choisir la langue" title="Choisir la langue">
                             <i class="fas fa-globe"></i>
                         </button>
-                        <ul class="dropdown-menu dropdown-menu-end lang-dropdown-menu" aria-labelledby="langDropdown">
+                        <ul class="dropdown-menu dropdown-menu-end lang-dropdown-menu" aria-labelledby="langDropdownFr">
                             <li>
-                                <a class="dropdown-item lang-item active" href="index.html">
+                                <a class="dropdown-item lang-item" href="index.html">
                                     <span class="lang-name">English</span>
                                     <i class="fas fa-check lang-check"></i>
                                 </a>
                             </li>
                             <li>
-                                <a class="dropdown-item lang-item" href="fr.html">
+                                <a class="dropdown-item lang-item active" href="fr.html">
                                     <span class="lang-name">Français</span>
                                     <i class="fas fa-check lang-check"></i>
                                 </a>
@@ -76,18 +81,18 @@
     <!-- Mobile Floating Bottom Dock (Bottom Center of Screen) -->
     <div class="mobile-bottom-dock">
         <div class="dropdown lang-dropdown dropup">
-            <button class="lang-toggle-btn dropdown-toggle" type="button" id="mobileLangDropdown" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Select Language" title="Select Language">
+            <button class="lang-toggle-btn dropdown-toggle" type="button" id="mobileLangDropdownFr" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Choisir la langue" title="Choisir la langue">
                 <i class="fas fa-globe"></i>
             </button>
-            <ul class="dropdown-menu lang-dropdown-menu" aria-labelledby="mobileLangDropdown">
+            <ul class="dropdown-menu lang-dropdown-menu" aria-labelledby="mobileLangDropdownFr">
                 <li>
-                    <a class="dropdown-item lang-item active" href="index.html">
+                    <a class="dropdown-item lang-item" href="index.html">
                         <span class="lang-name">English</span>
                         <i class="fas fa-check lang-check"></i>
                     </a>
                 </li>
                 <li>
-                    <a class="dropdown-item lang-item" href="fr.html">
+                    <a class="dropdown-item lang-item active" href="fr.html">
                         <span class="lang-name">Français</span>
                         <i class="fas fa-check lang-check"></i>
                     </a>
@@ -112,9 +117,9 @@
             <div class="hero-indicators-container">
                 <div class="hero-indicators-inner">
                     <div class="carousel-indicators hero-indicators">
-                        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Diapositive 1"></button>
+                        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Diapositive 2"></button>
+                        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Diapositive 3"></button>
                     </div>
                 </div>
             </div>
@@ -129,15 +134,15 @@
                             <div class="row">
                                 <div class="col-lg-8 col-xl-7">
                                     <div class="hero-content">
-                                        <h1>Detect <span>Fire & Smoke</span> in Industrial & Enterprise Sites</h1>
-                                        <p>Smart Safe Vision autonomously monitors camera streams across industrial facilities, oil & gas plants, warehouses, and university campuses, detecting smoke and flame within seconds to trigger rapid intervention.</p>
+                                        <h1>Détection de <span>Feu & Fumée</span> pour Sites Industriels & Entreprises</h1>
+                                        <p>Smart Safe Vision surveille en continu vos caméras dans les installations industrielles, sites pétroliers & gaziers, entrepôts et campus — détectant fumée et flammes en quelques secondes pour une intervention immédiate.</p>
 
                                         <div class="d-flex gap-3 flex-wrap hero-actions">
                                             <button type="button" class="btn-nav-primary" onclick="openDemoModal()">
-                                                <i class="fas fa-play me-2"></i>Open Demo
+                                                <i class="fas fa-play me-2"></i>Voir la Démo
                                             </button>
                                             <a href="#features" class="btn-outline-light d-flex align-items-center">
-                                                Discover Features
+                                                Découvrir les Fonctionnalités
                                             </a>
                                         </div>
 
@@ -145,17 +150,17 @@
                                             <div class="hero-stat">
                                                 <span class="stat-icon-wrap blue"><i class="fas fa-shield-halved"></i></span>
                                                 <div class="stat-value">98%+</div>
-                                                <div class="stat-caption">AI Precision</div>
+                                                <div class="stat-caption">Précision IA</div>
                                             </div>
                                             <div class="hero-stat">
                                                 <span class="stat-icon-wrap ember"><i class="fas fa-bolt"></i></span>
                                                 <div class="stat-value">&lt; 3s</div>
-                                                <div class="stat-caption">Instant Detection</div>
+                                                <div class="stat-caption">Détection Instantanée</div>
                                             </div>
                                             <div class="hero-stat">
                                                 <span class="stat-icon-wrap emerald"><i class="fas fa-eye"></i></span>
                                                 <div class="stat-value">24/7</div>
-                                                <div class="stat-caption">Autonomous Watch</div>
+                                                <div class="stat-caption">Surveillance Continue</div>
                                             </div>
                                         </div>
                                     </div>
@@ -165,7 +170,7 @@
                     </div>
                 </div>
 
-                <!-- Slide 2: Real-time Web & Mobile Alerts -->
+                <!-- Slide 2: Real-time Multi-Channel Smart Alerts -->
                 <div class="carousel-item">
                     <div class="hero-slide">
                         <div class="hero-slide-bg" style="background-image: url('img/hero-2.webp');"></div>
@@ -174,15 +179,15 @@
                             <div class="row">
                                 <div class="col-lg-8 col-xl-7">
                                     <div class="hero-content">
-                                        <h1>Real-Time <span>Smart Alerts</span> on Web & Android</h1>
-                                        <p>Eliminate critical response delays. The moment fire or smoke is detected, safety managers receive instant push notifications on Android, live video feeds, and real-time incident tracking directly on their web dashboard.</p>
+                                        <h1>Alertes <span>en Temps Réel</span> sur Web & Application Android</h1>
+                                        <p>Éliminez tout retard d'intervention. Dès qu'un départ de feu ou de fumée est repéré, recevez instantanément des notifications push sur Android, les flux vidéo en direct et le suivi d'incident sur le tableau de bord web.</p>
 
                                         <div class="d-flex gap-3 flex-wrap hero-actions">
                                             <a href="#how-it-works" class="btn-nav-primary btn-accent">
-                                                <i class="fas fa-bell me-2"></i>Explore Alerts
+                                                <i class="fas fa-bell me-2"></i>Découvrir les Alertes
                                             </a>
                                             <button type="button" class="btn-outline-light d-flex align-items-center" onclick="openContactModal()">
-                                                Request Trial
+                                                Demander un Essai
                                             </button>
                                         </div>
 
@@ -190,17 +195,17 @@
                                             <div class="hero-stat">
                                                 <span class="stat-icon-wrap ember"><i class="fas fa-bell"></i></span>
                                                 <div class="stat-value">&lt; 3s</div>
-                                                <div class="stat-caption">Alert Dispatch</div>
+                                                <div class="stat-caption">Envoi des Alertes</div>
                                             </div>
                                             <div class="hero-stat">
                                                 <span class="stat-icon-wrap cyan"><i class="fab fa-android"></i></span>
-                                                <div class="stat-value">Instant</div>
-                                                <div class="stat-caption">Android Push & Web Feed</div>
+                                                <div class="stat-value">Immédiat</div>
+                                                <div class="stat-caption">Push Android & Flux Web</div>
                                             </div>
                                             <div class="hero-stat">
                                                 <span class="stat-icon-wrap blue"><i class="fas fa-filter"></i></span>
                                                 <div class="stat-value">90%</div>
-                                                <div class="stat-caption">Fewer False Alarms</div>
+                                                <div class="stat-caption">Moins de Fausses Alertes</div>
                                             </div>
                                         </div>
                                     </div>
@@ -219,15 +224,15 @@
                             <div class="row">
                                 <div class="col-lg-8 col-xl-7">
                                     <div class="hero-content">
-                                        <h1>Connect Any Existing <span>CCTV Camera</span> via RTSP</h1>
-                                        <p>Seamlessly connect standard IP and CCTV cameras across your facilities via secure RTSP streams for unified, enterprise-grade AI fire and smoke monitoring.</p>
+                                        <h1>Connectez Toute <span>Caméra CCTV</span> Existante via RTSP</h1>
+                                        <p>Connectez vos caméras IP et CCTV standards en quelques minutes grâce aux flux RTSP sécurisés pour une surveillance intelligente à l'échelle de votre site.</p>
 
                                         <div class="d-flex gap-3 flex-wrap hero-actions">
                                             <a href="#detections" class="btn-nav-primary">
-                                                <i class="fas fa-video me-2"></i>View Live Grid
+                                                <i class="fas fa-video me-2"></i>Voir le Flux Live
                                             </a>
                                             <button type="button" class="btn-outline-light d-flex align-items-center" onclick="openDemoModal()">
-                                                Watch Demo
+                                                Voir la Démo
                                             </button>
                                         </div>
 
@@ -235,17 +240,17 @@
                                             <div class="hero-stat">
                                                 <span class="stat-icon-wrap emerald"><i class="fas fa-video"></i></span>
                                                 <div class="stat-value">RTSP</div>
-                                                <div class="stat-caption">Universal Standard</div>
+                                                <div class="stat-caption">Standard Universel</div>
                                             </div>
                                             <div class="hero-stat">
                                                 <span class="stat-icon-wrap blue"><i class="fas fa-network-wired"></i></span>
                                                 <div class="stat-value">60+</div>
-                                                <div class="stat-caption">Concurrent Streams</div>
+                                                <div class="stat-caption">Flux Simultanés</div>
                                             </div>
                                             <div class="hero-stat">
                                                 <span class="stat-icon-wrap amber"><i class="fas fa-bolt"></i></span>
                                                 <div class="stat-value">&lt; 5 min</div>
-                                                <div class="stat-caption">Fast Integration</div>
+                                                <div class="stat-caption">Intégration Rapide</div>
                                             </div>
                                         </div>
                                     </div>
@@ -257,10 +262,10 @@
             </div>
 
             <!-- Floating Modern Nav Controls -->
-            <button class="carousel-control-prev hero-nav-btn" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev" aria-label="Previous Slide">
+            <button class="carousel-control-prev hero-nav-btn" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev" aria-label="Diapositive précédente">
                 <i class="fas fa-chevron-left"></i>
             </button>
-            <button class="carousel-control-next hero-nav-btn" type="button" data-bs-target="#heroCarousel" data-bs-slide="next" aria-label="Next Slide">
+            <button class="carousel-control-next hero-nav-btn" type="button" data-bs-target="#heroCarousel" data-bs-slide="next" aria-label="Diapositive suivante">
                 <i class="fas fa-chevron-right"></i>
             </button>
         </div>
@@ -270,8 +275,8 @@
     <section class="features" id="features">
         <div class="container">
             <div class="section-title fade-in">
-                <h2>Everything You Need to Stay Safe</h2>
-                <p>One platform that watches all your cameras around the clock, detects threats the moment they appear, and alerts the right people instantly, without any manual effort.</p>
+                <h2>Tout Ce Dont Vous Avez Besoin Pour Protéger Vos Sites</h2>
+                <p>Une plateforme unique qui surveille l'ensemble de vos caméras en permanence, détecte les menaces dès leur apparition et alerte instantanément les bonnes équipes, sans aucun effort manuel.</p>
                 <div class="title-line"></div>
             </div>
 
@@ -279,43 +284,43 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="feature-card fade-in">
                         <div class="feature-icon camera"><i class="fas fa-video"></i></div>
-                        <h4>Works With Any IP Camera</h4>
-                        <p>Connect your existing cameras in minutes with no new hardware or complicated setup required. Smart Safe Vision monitors every feed simultaneously, 24 hours a day.</p>
+                        <h4>Compatible Avec Toutes Les Caméras IP</h4>
+                        <p>Connectez vos caméras existantes en quelques minutes, sans aucun nouveau matériel ni paramétrage complexe requis. Smart Safe Vision surveille tous vos flux simultanément, 24h/24.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="feature-card fade-in">
                         <div class="feature-icon ai"><i class="fas fa-brain"></i></div>
-                        <h4>AI That Never Blinks</h4>
-                        <p>Our AI engine analyzes every frame from every camera, around the clock. It spots fire and smoke with high accuracy, eliminating blind spots and human fatigue entirely.</p>
+                        <h4>Une IA Qui Ne Cligne Jamais Des Yeux</h4>
+                        <p>Notre moteur d'IA analyse chaque image de chaque caméra, en temps réel. Il repère flammes et fumées avec une grande précision, éliminant totalement les angles morts et la fatigue humaine.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="feature-card fade-in">
                         <div class="feature-icon realtime"><i class="fas fa-satellite-dish"></i></div>
-                        <h4>Live View With Instant Detection</h4>
-                        <p>Watch your cameras live from any device. The moment a threat is detected, it's highlighted on screen so your team knows exactly where to look and what to do.</p>
+                        <h4>Vue En Direct Avec Détection Instantanée</h4>
+                        <p>Visualisez vos caméras en direct depuis n'importe quel appareil. Dès qu'une menace est détectée, elle est mise en évidence à l'écran pour que vos équipes sachent immédiatement où intervenir.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="feature-card fade-in">
                         <div class="feature-icon history"><i class="fas fa-history"></i></div>
-                        <h4>Complete Incident Record</h4>
-                        <p>Every detection is automatically saved with a snapshot and full details. Browse and filter past incidents by camera, date, or threat type, invaluable for audits and investigations.</p>
+                        <h4>Historique Complet Des Incidents</h4>
+                        <p>Chaque détection est automatiquement sauvegardée avec un instantané et tous ses détails. Parcourez et filtrez l'historique par caméra, date ou type de menace, précieux pour vos audits et enquêtes.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="feature-card fade-in">
                         <div class="feature-icon monitoring"><i class="fas fa-chart-line"></i></div>
-                        <h4>Always On, Always Reliable</h4>
-                        <p>Smart Safe Vision monitors itself. If any part of the system goes offline or degrades, your team is notified immediately so your safety coverage is never compromised.</p>
+                        <h4>Toujours Actif, Toujours Fiable</h4>
+                        <p>Smart Safe Vision s'auto-surveille en continu. Si une caméra ou un module système s'interrompt, votre équipe est alertée sur-le-champ afin que votre couverture de sécurité ne soit jamais compromise.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="feature-card fade-in">
                         <div class="feature-icon storage"><i class="fas fa-database"></i></div>
-                        <h4>Secure, Unlimited Storage</h4>
-                        <p>Incident snapshots and records are stored securely and scale with your facility. Everything is accessible from the dashboard whenever you need it with no external tools required.</p>
+                        <h4>Stockage Sécurisé Et Évolutif</h4>
+                        <p>Les captures et rapports d'incidents sont conservés en toute sécurité et s'adaptent à l'ampleur de vos installations. Accédez à tout depuis le tableau de bord sans outils externes.</p>
                     </div>
                 </div>
             </div>
@@ -326,8 +331,8 @@
     <section class="how-it-works" id="how-it-works">
         <div class="container">
             <div class="section-title fade-in">
-                <h2>How It Works</h2>
-                <p>Four simple steps from camera to alert, fully automatic with no human involvement required.</p>
+                <h2>Comment Ça Marche</h2>
+                <p>Quatre étapes simples de la caméra à l'alerte, entièrement automatiques, sans intervention humaine requise.</p>
                 <div class="title-line"></div>
             </div>
 
@@ -337,9 +342,9 @@
                     <div class="step-card">
                         <i class="fas fa-video bg-icon"></i>
                         <div class="step-card-content">
-                            <span class="step-tag">Connect</span>
-                            <h4>Connect Your Cameras</h4>
-                            <p>Add your existing IP cameras to the platform in minutes. Smart Safe Vision connects automatically and begins watching every feed with no configuration headaches.</p>
+                            <span class="step-tag">Connexion</span>
+                            <h4>Connectez Vos Caméras</h4>
+                            <p>Ajoutez vos caméras IP existantes à la plateforme en quelques minutes. Smart Safe Vision se connecte automatiquement et commence la surveillance de chaque flux, sans configuration complexe.</p>
                         </div>
                     </div>
                 </div>
@@ -348,9 +353,9 @@
                     <div class="step-card">
                         <i class="fas fa-brain bg-icon"></i>
                         <div class="step-card-content">
-                            <span class="step-tag">Detect</span>
-                            <h4>AI Scans Every Frame</h4>
-                            <p>Our AI engine analyzes every frame from every camera, in real time. It detects fire and smoke with accuracy and speed that human monitoring simply cannot match.</p>
+                            <span class="step-tag">Détection</span>
+                            <h4>L'IA Analyse Chaque Image</h4>
+                            <p>Notre moteur d'IA analyse chaque image de chaque caméra en temps réel. Il détecte le feu et la fumée avec une précision et une rapidité que la surveillance humaine ne peut égaler.</p>
                         </div>
                     </div>
                 </div>
@@ -359,9 +364,9 @@
                     <div class="step-card">
                         <i class="fas fa-save bg-icon"></i>
                         <div class="step-card-content">
-                            <span class="step-tag">Record</span>
-                            <h4>Every Threat Is Logged</h4>
-                            <p>The instant a threat is detected, a snapshot is saved automatically, including the camera, time, and threat type. Nothing is missed, nothing is lost.</p>
+                            <span class="step-tag">Enregistrement</span>
+                            <h4>Chaque Menace Est Enregistrée</h4>
+                            <p>Dès qu'une menace est détectée, un instantané est automatiquement archivé, incluant la caméra, l'heure et le type d'incident. Rien n'est omis, rien n'est perdu.</p>
                         </div>
                     </div>
                 </div>
@@ -370,9 +375,9 @@
                     <div class="step-card">
                         <i class="fas fa-bell bg-icon"></i>
                         <div class="step-card-content">
-                            <span class="step-tag">Alert</span>
-                            <h4>Your Team Is Notified Instantly</h4>
-                            <p>Security personnel see live feeds with threats highlighted on the dashboard and receive instant alerts on their devices. The right people are informed within seconds, every time.</p>
+                            <span class="step-tag">Alerte</span>
+                            <h4>Vos Équipes Sont Alertées Instantanément</h4>
+                            <p>Les agents de sécurité visualisent les flux en direct avec les menaces surlignées sur le tableau de bord et reçoivent des alertes instantanées sur leurs terminaux. Les bons intervenants sont prévenus en quelques secondes.</p>
                         </div>
                     </div>
                 </div>
@@ -385,29 +390,29 @@
         <div class="container">
             <div class="det-content">
                 <div class="section-title fade-in">
-                    <h2>What We Detect</h2>
-                    <p>Core fire and smoke protection with custom AI models tailored to your specific facility needs.</p>
+                    <h2>Ce Que Nous Détectons</h2>
+                    <p>Protection incendie et fumée en temps réel avec modèles IA sur mesure adaptés aux besoins de vos sites.</p>
                     <div class="title-line"></div>
                 </div>
 
                 <div class="det-grid">
                     <div class="det-item fire fade-in">
                         <i class="fas fa-fire"></i>
-                        <h5>Fire</h5>
-                        <p>Spots active flames across all connected cameras, day or night. Trained on real-world industrial and commercial fire scenarios for reliable, low-false-alarm detection.</p>
-                        <span class="det-threshold"><i class="fas fa-bullseye"></i> High Accuracy</span>
+                        <h5>Feu & Flammes</h5>
+                        <p>Repère les flammes actives sur l'ensemble des caméras connectées, de jour comme de nuit. Entraîné sur des scénarios réels d'incendies industriels et commerciaux pour une fiabilité maximale et un taux minimal de fausses alertes.</p>
+                        <span class="det-threshold"><i class="fas fa-bullseye"></i> Haute Précision</span>
                     </div>
                     <div class="det-item smoke fade-in">
                         <i class="fas fa-smog"></i>
-                        <h5>Smoke</h5>
-                        <p>Detects smoke before flames appear, giving your team critical extra minutes to respond, evacuate, and prevent a small incident from becoming a disaster.</p>
-                        <span class="det-threshold"><i class="fas fa-gauge-high"></i> Maximum Sensitivity</span>
+                        <h5>Fumée</h5>
+                        <p>Détecte les émissions de fumée avant même l'apparition des flammes, offrant à vos équipes de précieuses minutes d'avance pour réagir, évacuer et empêcher un début d'incendie de s'étendre.</p>
+                        <span class="det-threshold"><i class="fas fa-gauge-high"></i> Sensibilité Maximale</span>
                     </div>
                     <div class="det-item custom fade-in">
                         <i class="fas fa-sliders-h"></i>
-                        <h5>Custom Detections</h5>
-                        <p>Have specific security or operational requirements? We train and deploy tailored AI detection models adapted to your unique environment, safety hazards, and facility rules.</p>
-                        <span class="det-threshold"><i class="fas fa-wand-magic-sparkles"></i> Tailored On Demand</span>
+                        <h5>Détections Sur Mesure</h5>
+                        <p>Des besoins spécifiques de sécurité ou d'exploitation ? Nous développons et déployons des modèles d'IA sur mesure, adaptés à vos risques métier, sites et exigences de conformité.</p>
+                        <span class="det-threshold"><i class="fas fa-wand-magic-sparkles"></i> Sur Demande</span>
                     </div>
                 </div>
             </div>
@@ -418,8 +423,8 @@
     <section class="stats" id="stats">
         <div class="container">
             <div class="section-title fade-in">
-                <h2>Numbers That Matter</h2>
-                <p>Built for businesses where every second counts and reliability is not optional.</p>
+                <h2>Des Chiffres Qui Comptent</h2>
+                <p>Conçu pour les environnements où chaque seconde compte et où la fiabilité n'est pas négociable.</p>
                 <div class="title-line"></div>
             </div>
 
@@ -427,26 +432,26 @@
                 <div class="stat-item blue fade-in">
                     <i class="fas fa-shield-halved bg-icon"></i>
                     <span class="stat-number">24/7</span>
-                    <div class="stat-label">Continuous Monitoring</div>
-                    <p class="stat-desc">Autonomous around-the-clock video stream surveillance</p>
+                    <div class="stat-label">Surveillance Continue</div>
+                    <p class="stat-desc">Surveillance vidéo autonome 24h/24 sans fatigue humaine</p>
                 </div>
                 <div class="stat-item ember fade-in">
                     <i class="fas fa-bolt bg-icon"></i>
                     <span class="stat-number">&lt;500<span class="stat-unit">ms</span></span>
-                    <div class="stat-label">Real-Time Detection</div>
-                    <p class="stat-desc">Ultra-low latency edge AI inference on every video frame</p>
+                    <div class="stat-label">Détection en Temps Réel</div>
+                    <p class="stat-desc">Inférence IA edge ultra-rapide sur chaque image vidéo</p>
                 </div>
                 <div class="stat-item cyan fade-in">
                     <i class="fas fa-video bg-icon"></i>
                     <span class="stat-number">60+</span>
-                    <div class="stat-label">Cameras Supported</div>
-                    <p class="stat-desc">Concurrent high-def RTSP/IP streams per processing node</p>
+                    <div class="stat-label">Caméras Prises en Charge</div>
+                    <p class="stat-desc">Flux RTSP/ONVIF simultanés par nœud de traitement</p>
                 </div>
                 <div class="stat-item emerald fade-in">
                     <i class="fas fa-bell bg-icon"></i>
                     <span class="stat-number">&lt;3<span class="stat-unit">s</span></span>
-                    <div class="stat-label">Alert Response Time</div>
-                    <p class="stat-desc">Instant multi-channel notifications to safety teams</p>
+                    <div class="stat-label">Temps de Réponse des Alertes</div>
+                    <p class="stat-desc">Diffusion instantanée multicanale aux équipes de sécurité</p>
                 </div>
             </div>
         </div>
@@ -456,11 +461,11 @@
     <section class="cta">
         <div class="container">
             <div class="cta-content fade-in">
-                <h2>Ready to Protect Your Facility?</h2>
-                <p>Every second counts when fire breaks out. Smart Safe Vision ensures your team is alerted the moment a threat is detected, day or night, automatically.</p>
+                <h2>Prêt à Protéger Vos Installations ?</h2>
+                <p>Chaque seconde est décisive lors d'un départ de feu. Smart Safe Vision veille à ce que votre équipe soit alertée dès l'instant où une menace est repérée, de jour comme de nuit, automatiquement.</p>
                 <div class="d-flex gap-3 justify-content-center flex-wrap">
                     <a href="#" onclick="openContactModal(); return false;" class="btn-cta-primary d-flex align-items-center">
-                        <i class="fas fa-envelope me-2"></i>Contact Us
+                        <i class="fas fa-envelope me-2"></i>Contactez-nous
                     </a>
                 </div>
             </div>
@@ -471,7 +476,7 @@
     <div id="contactModal" class="demo-overlay" onclick="if(event.target===this)closeContactModal()">
         <div class="demo-modal-content contact-modal-card">
             <div class="modal-glow-bg"></div>
-            <button type="button" class="demo-modal-close" onclick="closeContactModal()" aria-label="Close">
+            <button type="button" class="demo-modal-close" onclick="closeContactModal()" aria-label="Fermer">
                 <i class="fas fa-times"></i>
             </button>
             <div class="modal-body-wrapper">
@@ -480,8 +485,8 @@
                         <i class="fas fa-headset"></i>
                     </div>
                     <div>
-                        <h3 class="modal-title-text">Contact Us</h3>
-                        <p class="modal-subtitle-text">Get in touch directly with our team for inquiries, consultations, or system deployments.</p>
+                        <h3 class="modal-title-text">Contactez-nous</h3>
+                        <p class="modal-subtitle-text">Échangez directement avec notre équipe pour toute question, consultation ou projet de déploiement.</p>
                     </div>
                 </div>
                 
@@ -492,9 +497,9 @@
                             <i class="fas fa-envelope"></i>
                         </div>
                         <div class="contact-info-text">
-                            <span class="contact-info-label">Email Us</span>
+                            <span class="contact-info-label">Envoyez-nous un email</span>
                             <span class="contact-info-val">contact@smartforgreen.com</span>
-                            <span class="contact-info-desc">Click to send an email directly</span>
+                            <span class="contact-info-desc">Cliquez pour envoyer un email direct</span>
                         </div>
                         <div class="contact-info-arrow">
                             <i class="fas fa-arrow-right"></i>
@@ -507,9 +512,9 @@
                             <i class="fas fa-phone-alt"></i>
                         </div>
                         <div class="contact-info-text">
-                            <span class="contact-info-label">Call Us Directly</span>
+                            <span class="contact-info-label">Appelez-nous directement</span>
                             <span class="contact-info-val">+216 93 267 545</span>
-                            <span class="contact-info-desc">Mon – Fri, 8:30 AM – 6:00 PM</span>
+                            <span class="contact-info-desc">Lun – Ven, 8h30 – 18h00</span>
                         </div>
                         <div class="contact-info-arrow">
                             <i class="fas fa-arrow-right"></i>
@@ -519,10 +524,10 @@
 
                 <div class="contact-modal-actions">
                     <a href="mailto:contact@smartforgreen.com" class="btn-modal-action btn-email-action">
-                        <i class="fas fa-paper-plane me-2"></i>Send Email
+                        <i class="fas fa-paper-plane me-2"></i>Envoyer un email
                     </a>
                     <a href="tel:+21693267545" class="btn-modal-action btn-phone-action">
-                        <i class="fas fa-phone me-2"></i>Call Now
+                        <i class="fas fa-phone me-2"></i>Appeler maintenant
                     </a>
                 </div>
             </div>
@@ -542,28 +547,28 @@
                             <span class="word-vision">VISION</span>
                         </div>
                     </div>
-                    <p>AI-powered Incidents detection that protects your people, your assets, and your business automatically, around the clock.</p>
+                    <p>Détection d'incidents par IA qui protège vos collaborateurs, vos actifs et vos activités, automatiquement, 24h/24.</p>
                 </div>
                 <div class="footer-section">
-                    <h5>Features</h5>
-                    <a href="#features">Multi-Camera Monitoring</a>
-                    <a href="#features">AI Detection</a>
-                    <a href="#features">Live Camera Feed</a>
-                    <a href="#features">Incident History</a>
-                    <a href="#features">System Monitoring</a>
+                    <h5>Fonctionnalités</h5>
+                    <a href="#features">Surveillance Multi-Caméras</a>
+                    <a href="#features">Détection par IA</a>
+                    <a href="#features">Flux Caméra en Direct</a>
+                    <a href="#features">Historique des Incidents</a>
+                    <a href="#features">Supervision du Système</a>
                 </div>
                 <div class="footer-section">
-                    <h5>Detection</h5>
-                    <a href="#detections">Fire Detection</a>
-                    <a href="#detections">Smoke Detection</a>
-                    <a href="#detections">Custom Detections</a>
+                    <h5>Détection</h5>
+                    <a href="#detections">Détection de Feu</a>
+                    <a href="#detections">Détection de Fumée</a>
+                    <a href="#detections">Détections Sur Mesure</a>
                 </div>
                 <div class="footer-section footer-creator-section">
-                    <h5>Created By</h5>
+                    <h5>Conçu Par</h5>
                     <a href="https://smartforgreen.com/" target="_blank" rel="noopener noreferrer" class="sfg-brand-link" title="Smart For Green">
                         <img src="img/logoSFG.webp" alt="Smart For Green" class="sfg-logo-img">
                     </a>
-                    <p class="sfg-desc">Pioneering AI &amp; IoT solutions for environmental protection, smart agriculture, and wildfire prevention.</p>
+                    <p class="sfg-desc">Pionnier des solutions IA &amp; IoT dédiées à la protection de l'environnement, à l'agritech et à la prévention des incendies.</p>
                     <a href="https://smartforgreen.com/" target="_blank" rel="noopener noreferrer" class="sfg-visit-btn">
                         <span>smartforgreen.com</span>
                         <i class="fas fa-arrow-up-right-from-square ms-1"></i>
@@ -571,7 +576,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 Smart Safe Vision. Created by <a href="https://smartforgreen.com/" target="_blank" rel="noopener noreferrer" class="footer-creator-link">Smart For Green</a>. All rights reserved.</p>
+                <p>&copy; 2026 Smart Safe Vision. Conçu par <a href="https://smartforgreen.com/" target="_blank" rel="noopener noreferrer" class="footer-creator-link">Smart For Green</a>. Tous droits réservés.</p>
             </div>
         </div>
     </footer>
@@ -580,7 +585,7 @@
     <div id="demoModal" class="demo-overlay" onclick="if(event.target===this)closeDemoModal()">
         <div class="demo-modal-content demo-modal-card">
             <div class="modal-glow-bg"></div>
-            <button type="button" class="demo-modal-close" onclick="closeDemoModal()" aria-label="Close">
+            <button type="button" class="demo-modal-close" onclick="closeDemoModal()" aria-label="Fermer">
                 <i class="fas fa-times"></i>
             </button>
             <div class="modal-body-wrapper">
@@ -589,8 +594,8 @@
                         <i class="fas fa-play"></i>
                     </div>
                     <div>
-                        <h3 class="modal-title-text mb-1">Smart Safe Vision in Action</h3>
-                        <p class="modal-subtitle-text">Watch how AI scans every camera feed, detects threats in real time, and instantly alerts security personnel.</p>
+                        <h3 class="modal-title-text mb-1">Smart Safe Vision en Action</h3>
+                        <p class="modal-subtitle-text">Découvrez comment l'IA analyse chaque flux vidéo, détecte les anomalies en temps réel et avertit les intervenants.</p>
                     </div>
                 </div>
 
@@ -607,7 +612,3 @@
     <script src="js/main.js"></script>
 </body>
 </html>
-
-
-
-
