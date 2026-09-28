@@ -21,6 +21,16 @@
             text-align: center;
             padding: 160px 24px 80px;
         }
+        .notfound-logo {
+            height: 84px;
+            width: auto;
+            object-fit: contain;
+            margin-bottom: 8px;
+            filter: drop-shadow(0 4px 16px rgba(30, 91, 255, 0.35));
+        }
+        [data-theme="dark"] .notfound-logo {
+            filter: brightness(0) invert(1) drop-shadow(0 4px 16px rgba(30, 91, 255, 0.35));
+        }
         .notfound-code {
             font-family: 'Outfit', 'Montserrat', sans-serif;
             font-weight: 800;
@@ -73,6 +83,7 @@
     <!-- 404 Content -->
     <section class="notfound-section">
         <div class="container">
+            <img src="img/brand-icon.png" alt="Smart Safe Vision" class="notfound-logo">
             <div class="notfound-code">404</div>
             <h1 class="notfound-title">Page Not Found</h1>
             <p class="notfound-text">The page you're looking for doesn't exist or may have been moved. Let's get you back to safety.</p>
